@@ -9,6 +9,7 @@ When installed, use this:
 
 
 `chmod +x directory placed in/*.sh`
+
 and   
 `chmod +x directory placed in/scripts/*.sh`   
   
