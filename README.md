@@ -5,7 +5,9 @@ Universal Linux Control Panel
 A Code project I've been making.
 This is the simplest version and is free.
 
-If you can't run "console.sh" use:
+When installed, use this:
+
+
 chmod +x directory placed in/*.sh  
 and   
 chmod +x directory placed in/scripts/*.sh   
