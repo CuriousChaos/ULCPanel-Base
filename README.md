@@ -2,7 +2,7 @@
 Universal Linux Control Panel
 
 
-A Code project I've been making.
+A project in Shell I've been making.
 This is the simplest version and is free.
 
 When installed, use this:
