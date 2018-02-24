@@ -3,7 +3,7 @@ if [ -n "$1" ]
 then
 echo Yeah, no. Go ask someone else.
 sleep 2s
-sudo clear
+clear
 else
-sudo clear
+clear
 fi
