@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ -n "$1" ]
+then
+echo Yeah, no. Go ask someone else.
+sleep 2s
+sudo clear
+else
+sudo clear
+fi

@@ -1,0 +1,33 @@
+#!/bin/sh
+if [ $1 = "-p" ]
+then
+sudo ping -c $2 $3
+fi
+if [ $1 = "-ic" ]
+then
+sudo ifconfig
+fi
+if [ $1 = "-r" ]
+then
+sudo route
+fi
+if [ $1 = "-nt" ]
+then
+sudo netstat
+fi
+if [ $1 = "-tr" ]
+then
+sudo traceroute $2
+fi
+if [ $1 = "-trs" ]
+then
+sudo tracepath $2
+fi
+if [ $1 = "-host" ]
+then
+sudo hostname
+fi
+if [ $1 = "-ifup" ]
+then
+sudo ifup $2
+fi

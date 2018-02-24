@@ -1,0 +1,110 @@
+#!/bin/sh
+if [ $1 = "compile" ]
+then
+echo COMPILE
+echo A mini-suite to help you compile code.
+echo 
+echo "compile C F (O L)"
+echo C : What to use.
+echo -sh makes a shell file executable.
+echo "-gpp uses the G++ compiler system for mutliple languages."
+echo "-mono uses the Mono suite by Microsoft to compile and run C#."
+echo F : The full directory to the file to compile.
+echo "-gpp tags:"
+echo "O : The output directory of the compiled file."
+echo "L : The G++-accepted language to compile for."
+echo 
+echo "Examples:"
+echo "compile -sh /home/pi/Desktop/hello_world.sh"
+echo "compile -gpp /home/pi/Desktop/code.cpp /home/pi/Documents/ CPP"
+fi
+if [ $1 = "help" ]
+then
+echo HELP
+echo Your friendly neighborhood help program.
+echo 
+echo No options or examples.
+fi
+if [ $1 = "clear" ]
+then
+echo CLEAR
+echo Your not-so-friendly console clearer.
+echo 
+echo No options.
+echo
+echo Examples:
+echo clear
+echo "clear my_life_problems (this doesn't seem to work very well)"
+echo "clear my_social_errors (this doesn't seem to work very well either)"
+fi
+if [ $1 = "fileutil" ]
+then
+echo FILEUTIL
+echo A suite of File-centered commands.
+echo 
+echo "fileutil C F O"
+echo C : The command to run on the file.
+echo -fsh is for shell files. It runs 'compile -sh' on the specified file
+echo and removes the .sh from it to make it optimized for ULCPanel.
+echo -re renames a file or directory.
+echo -mf moves a file or directory.
+echo F : The target file, with full path or the name of file in CD.
+echo O : Where to output it and as what, with full path or the name of file in CD.
+echo 
+echo Examples:
+echo "fileutil -fsh /home/pi/Desktop/data.sh /home/pi/Documents/run_data"
+echo "fileutil -re data.sh memes.sh"
+echo "fileutil -mf /home/pi/Documents/memes.sh /home/pi/Desktop/memes.sh"
+fi
+
+if [ $1 = "admin" ]
+then
+echo ADMIN
+echo A simple tool to run commands of all sort in SUDO.
+echo 
+echo "admin C V"
+echo C : Command to run. Can be a Linux command or a file with directory.
+echo V : The set of variables to include. Can take 9 seperated values.
+echo 
+echo Examples:
+echo "admin ls -i >> list.txt  :: Has four of the nine values used"
+echo "admin ./scripts/man admin  :: Has two of the nine values used"
+fi
+if [ $1 = "access" ]
+then
+echo ACCESS
+echo A tool suite for networking.
+echo 
+echo "access T V1 V2"
+echo T : Tool to use.
+echo -p is ping, -ic shows your network/access point config
+echo -r shows the kernel IP routing table, and -nt runs NETSTAT.
+echo -tr is traceroute, -trs is tracepath, -host shows hostname,
+echo and -ifup runs the IFUP command.
+echo V1 : Variable one, for use in -p, -tr, -trs, and -ifup.
+echo V2 : Variable two, for use in -p.
+echo 
+echo Examples:
+echo "access -p 5 123.123.1.1  :: 5 pings to 123.123.1.1"
+echo "access -tr 123.456.1.1  :: Traces route to 123.456.1.1"
+echo "access -trs 123.123.1.1  :: Traces simplified route to 123.123.1.1"
+echo "access -ifup wlan0  :: Brings up the interface for access point WLAN0"
+echo "access -ic"
+fi
+if [ $1 = "asac" ]
+then
+echo ASAC
+echo Access Security and Connected
+echo 
+echo "asac F V1 V2 V3 V4 T"
+echo "F : The function to run.
+echo "secure, upall, scan, and net
+echo "V1-4 : Variables to pass to those functions."
+echo "T : The tag to include in certain functions."
+echo 
+echo "asac secure  :: Runs multiple scanners."
+echo "asac upall  :: Updates all the programs used in secure."
+echo "asac scan  :: Scans for a few SHA-1 hashes for malware."
+echo "asac net -p 5 123.456.1.1  :: Uses the ACCESS command to ping 123.456.1.1 5 times."
+fi
+# add on to this whenever a new command is added

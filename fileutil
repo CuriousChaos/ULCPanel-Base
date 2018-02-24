@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ $1 = "-fsh" ]
+then
+sudo chmod +x $2
+sudo mv $2 $3
+fi
+if [ $1 = "-re" ]
+then
+sudo mv $2 $3
+fi
+if [ $1 = "-mf" ]
+then
+sudo mv $2 $3
+fi

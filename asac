@@ -1,0 +1,39 @@
+#!/bin/sh
+# this program is for security and access. (Access Security and Connected)
+if [ $1 = "secure" ]
+then
+sudo chkrootkit
+sleep 3s
+sudo debsums -e -l
+sleep 3s
+sudo debsecan
+sleep 3s
+sudo ckport
+sleep 2s
+fi
+if [ $1 = "net" ]
+then
+sudo ./scripts/access $2 $3 $4
+fi
+if [ $1 = "scan" ]
+then
+#Expand this.
+echo "Scanning for PERL-SHELLBOT (All variants)"
+rm -rf $(sudo find / -type f | sha1sum | grep 34E9853AAE445F5D41049DEC67ADE4F020917115)
+rm -rf $(sudo find / -type f | sha1sum | grep 658F7F88A826CD651FDD091F5335D6D747CA4FF6)
+rm -rf $(sudo find / -type f | sha1sum | grep 8F33D160D17C6511752671BD25A227218A97424F)
+rm -rf $(sudo find / -type f | sha1sum | grep 67B815532C83B50DEF9D4DFED74D24374011DAD81)
+sleep 1s
+echo "Scanning for LINUX-DWNLDAI"
+rm -rf $(sudo find / -type f | sha1sum | grep ca9fad2fe12b5231ae42f507afbb00a742b2e3d2)
+sleep 1s
+fi
+if [ $1 = "upall" ]
+then
+# update programs used in asac
+sudo apt-get install chkrootkit
+sudo apt-get install ckport
+sudo apt-get install debsums
+sudo apt-get install debsecan
+sudo apt-get update
+fi

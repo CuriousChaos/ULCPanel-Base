@@ -1,0 +1,17 @@
+#!/bin/sh
+if [ $1 = "-sh" ] 
+then
+sudo chmod +x $2
+else
+if [ $1 = "-gpp" ] 
+then
+sudo g++ -o $2 -x $3 $4
+else
+if [ $1 = "-mono" ] 
+then
+mcs $2
+else
+echo Unrecognized option $1
+fi
+fi
+fi

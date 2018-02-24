@@ -1,0 +1,24 @@
+#!/bin/sh
+echo Universal Linux Control Panel help
+echo 
+echo "Premade commands (use man {command} for variables)"
+echo "COMPILE : A compiler for C/C++, C#, and Shell."
+echo "MAN : The manual for how to use commands. "
+echo "HELP : This program. The help program."
+echo FILEUTIL : A file utilities suite.
+echo "ADMIN : A simple program to run a command of any sort (including linux commands) in SUDO."
+echo CLEAR : Simply clears the console screen. No man page needed, but there still is one.
+echo ACCESS : A network tool execution program.
+echo "ASAC : Access Security and Connected. It has security functions and other utilities."
+# add as they are added
+echo
+echo Adding scripts is easy: insert them into scripts, and use FILEUTILS -FSH on it.
+echo "To run them, simply add custom/ before their name."
+echo 
+echo The reccomended /etc/apt/source.list additions for this program are:
+echo "deb http://repozytorium.mati75.eu/raspbian jessie-backports main contrib non-free"
+echo "#deb-src http://repozytorium.mati75.eu/raspbian jessie-backports main contrib non-free"
+echo "deb http://mirrordirector.raspbian.org/raspbian/ stretch main contrib non-free rpi"
+echo 
+echo 
+sleep 3s
