@@ -114,6 +114,8 @@ Here's a list of GitHub ... emojis to use.
 
 * Follow the community guidelines
 
+* Not republish code from different repositories or projects without granted permission
+
 * Be creative
 
 * Help make the project better!
