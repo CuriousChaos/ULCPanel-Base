@@ -1,9 +1,8 @@
-# ULCPanel
-Universal Linux Control Panel
+# ULCPanel-Base
+## Universal Linux Control Panel
 
 
-A project in Shell I've been making.
-This is the simplest version and is free.
+An open-source project for Linux distributions. This is the BASE version.
 
 When installed, use this:
 
